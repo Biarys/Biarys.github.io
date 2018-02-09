@@ -31,7 +31,6 @@ $(document).scroll(function() {
   const scrollPos = $(document).scrollTop();
   if (scrollPos >= top1 ) {
     $('#myNavbar').css('background-color', 'white');
-
   } else if (scrollPos < top1) {
     $('#myNavbar').css('background-color', 'transparent');
   }
