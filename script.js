@@ -10,7 +10,7 @@ $(document).ready(function(){
       event.preventDefault();
 
       // Store hash
-      var hash = this.hash;
+      const hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -23,4 +23,16 @@ $(document).ready(function(){
       });
     }  // End if
   });
+});
+
+const top1 = $('#about-me').offset().top;
+
+$(document).scroll(function() {
+  const scrollPos = $(document).scrollTop();
+  if (scrollPos >= top1 ) {
+    $('#myNavbar').css('background-color', 'white');
+
+  } else if (scrollPos < top1) {
+    $('#myNavbar').css('background-color', 'transparent');
+  }
 });

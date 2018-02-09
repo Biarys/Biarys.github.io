@@ -6,8 +6,6 @@ body {
 #career {padding-top:50px; min-height:200px;color: black; background-color: white;}
 #skills {padding-top:50px; min-height:200px; color: black; background-color: white;}
 #projects {padding-top:50px; min-height:200px; color: black; background-color: white;}
-#section41 {padding-top:50px; min-height:200px; color: black; background-color: white;}
-#section42 {padding-top:50px; min-height:200px; color: black; background-color: white;}
 #landing-page {
   position: static;
   top: 0;
@@ -38,7 +36,18 @@ header {
   /* background-size: cover; */
 }
 
-@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+.navbar {
+  background-color: transparent;
+  /* If wanna make transition from transparent to white color */
+  /* transition: background-color 1s ease 0s; */
+}
+ul.nav a:hover { color: black !important; }
+
+#changeBlue:hover{
+  color:red;
+}
+
+/* @import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
   content: '';
   display: block;
@@ -243,4 +252,4 @@ h1, h2, h3, h4 {
   #timeline .timeline-item .timeline-icon {
     left: 0;
   }
-}
+} */
